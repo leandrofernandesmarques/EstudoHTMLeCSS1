@@ -1,0 +1,47 @@
+
+#banner{width: 100%;}
+
+.principal{
+    background-color: #efefef;
+    padding: 30px;
+}
+.tituloPrincipal{
+    padding-left: 20%;
+}
+.textoCentralizado{
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+
+#missao {
+    font-size: 20;
+}
+
+em strong{/*tudo o que está em negrito e itálico*/
+    color: red;
+}
+
+.itensDeLista{
+    font-style: italic;
+}
+
+.beneficios{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+ul{
+    display: inline-block;
+    vertical-align: top;/*O CSS costuma alinhar pela base por isso a necessidade deste comando*/
+    width: 20%;
+    margin-right: 15%;
+
+}
+h2{
+    text-align: center;
+}
+.imagemBeneficios{/*Imagem pode ter conteúdo do lado, listas e paragrafos não*/
+width: 50%;
+}
+
