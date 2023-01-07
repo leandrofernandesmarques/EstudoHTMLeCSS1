@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="conteinerDoCabecalho">
+            <img class="logoCabecalho" src="logo.png" alt="Logomarca. Um homem barbudo de óculos escuros e cabelo penteado">
+            <nav class="navBarbearia">
+                <ul class="listaBarbearia">
+                    <li><a href="index.html" class="itensDeListaBarbearia">Home</a></li>
+                    <li><a href="produtos.html" class="itensDeListaBarbearia">Produto</a></li>
+                    <li><a href="contato.html" class="itensDeListaBarbearia">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>        
+        <form class="formulario" action="">
+            <label for="nomeESobrenome">Nome e Sobrenome</label>
+            <input class="inputConfiguracaoPadrao" required  id="nomeESobrenome" type="text">
+            
+            <label for="email">Email</label>
+            <input class="inputConfiguracaoPadrao" required placeholder="email@dominio.com" id="email" type="email">
+            
+            <label for="telefone">Telefone</label>
+            <input class="inputConfiguracaoPadrao" required placeholder="(XX) XXXXX-XXXX" id="telefone" type="tel">
+            
+            <label for="mensagem">Mensagem</label>
+            <textarea class="inputConfiguracaoPadrao" required name="" id="mensagem" cols="70" rows="10"></textarea>
+
+            <p>Como prefere o nosso contato? </p>
+
+            <fieldset>    <!-- radios -->
+                <label for="radioEmail"><input id="radioEmail" type="radio" name="contato" value="email">Email</label>    
+                        
+                <label for="radioTelefone"> <input id=radioTelefone type="radio" name="contato" value="telefone">Telefone</label>
+                
+                <label for="radioWhatsapp"><input id="radioWhatsapp" type="radio" name="contato" value="WhatsApp" checked>WhatsApp</label>                    
+            </fieldset>
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select name="selectPeriodo" id="selecPeriodo" class="selectPeriodo">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+            </fieldset>
+            <label for="newsletter" class="checkboxNewsletter"><input type="checkbox" name="newsletter" id="newsletter">Gostaria de receber nossas novidades?</label>
+            <input type="submit" value="Enviar Formulário" class="botaoEnviar">            
+        </form> 
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>08:00 ~~ 20:00 hs</td>
+                </tr>
+            </tbody>
+            <tr>
+                <td>Sexta</td>
+                <td>08:00 ~~ 20:00 hs</td>
+            </tr>
+            
+            
+        </table>    
+    </main>
+
+    <footer>
+        <img src="logo-branco.png" alt="Logomarca da barbearia Alura. Um homem com cabelo penteado, barba, bigode e óculos escuros.">
+            <h3>
+                <p>&copy; Copyright Barbearia Alura 2023</p>
+            </h3>
+        </img>
+    </footer>   
+    
+</body>
+    
+</html>

@@ -1,0 +1,110 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.logoCabecalho{
+    width: 120px;
+}
+header {
+	background-color: rgb(224, 224, 224);
+	padding: 20px 0;
+}
+.conteinerDoCabecalho{    
+    position: relative;
+    width: 940px;
+    margin: 0 auto;/*cima baixo 0*/    
+}
+.navBarbearia{
+    position: absolute;
+    top: 90px; ;
+    right: 0px;
+}
+.navBarbearia li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+.navBarbearia a{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration:none;
+    color: rgb(120, 120, 120);
+}
+.navBarbearia a:hover{
+    color: rgb(77, 77, 77);
+    text-decoration:wavy;
+}
+.itensDeListaBarbearia{
+    margin-left: 30px;
+}
+.itensDeListaBarbearia a:hover{
+    text-decoration: wavy;
+    color: aqua;
+}
+
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    padding: 10%;
+    
+}
+form label, p{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.inputConfiguracaoPadrao{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkboxNewsletter{
+    padding: 20px 0px;
+}
+#selectPeriodo{
+    padding: 0px 30px;
+}
+
+
+.botaoEnviar{
+    width: 40%;
+    padding: 15px 0;
+    background: rgb(109, 109, 210);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    
+}
+.botaoEnviar:hover{
+    background:rgb(132, 132, 229);
+    transform: scale(1.2);    
+}
+table{
+    margin: 20px 0 40px;
+}
+thead{
+    background: rgb(178, 178, 178);
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid rgb(78, 78, 78);
+    padding: 8px 15px;
+}
+footer{
+    background: url("bg.jpg");
+    text-align: center;
+    padding: 40px 0;
+}
+footer legend{
+    color: white;
+}
+
+

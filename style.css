@@ -1,47 +1,144 @@
-
-#banner{width: 100%;}
-
-.principal{
-    background-color: #efefef;
-    padding: 30px;
+body{
+    font-family: 'Montserrat', sans-serif;
 }
-.tituloPrincipal{
-    padding-left: 20%;
+.logoCabecalho{
+    width: 120px;
 }
-.textoCentralizado{
+header {
+	background-color: rgb(224, 224, 224);
+	padding: 20px 0;
+}
+.conteinerDoCabecalho{    
+    position: relative;
+    width: 940px;
+    margin: 0 auto;/*cima baixo 0*/    
+}
+.navBarbearia{
+    position: absolute;
+    top: 90px; ;
+    right: 0px;
+}
+.navBarbearia li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+.navBarbearia a{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration:none;
+    color: rgb(120, 120, 120);
+}
+.navBarbearia a:hover{
+    color: rgb(77, 77, 77);
+    text-decoration:wavy;
+}
+.itensDeListaBarbearia{
+    margin-left: 30px;
+}
+.itensDeListaBarbearia a:hover{
+    text-decoration: wavy;
+    color: aqua;
+}
+
+/* SECTION DO FUNDO DEGRADÊ */
+.sectionFundoDegrade{
+    background: linear-gradient(white,rgb(178, 178, 178));
+}
+
+/* CSS DA PAGINA INICIAL (SEM HEADER E FOOTER */
+.imgPrincipal{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#tituloSobreNos,.tituloBeneficios,.tituloMapa{
+    margin: 1em 0 1em 0;
     text-align: center;
-}
-p {
-    text-align: center;
-}
-
-#missao {
-    font-size: 20;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.6);/* Essa opacidade (alpha), pode ser utilizada em QUALQUER elemento e em QUALQUER cor. */
+    text-shadow: 2px 2px #ededed;;
 }
 
-em strong{/*tudo o que está em negrito e itálico*/
-    color: red;
+.sectionSobreNos{
+    margin: 0 8rem;
 }
 
-.itensDeLista{
+.sectionSobreNos p{
+    margin-bottom: 1rem;
+}
+strong{
+    font-weight: bold;
+}
+em{
     font-style: italic;
 }
-
-.beneficios{
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
+.imgUtensilios{
+    width: 130px;
+    float: left;/* Imagem a esquerda texto contornando a imagem a direita */    
+    clear: left;/* Termina o float */
+    margin: 0 20px 20px 0;/* Cima, Direita, Baixo e Esquerda */
 }
-ul{
-    display: inline-block;
-    vertical-align: top;/*O CSS costuma alinhar pela base por isso a necessidade deste comando*/
-    width: 20%;
-    margin-right: 15%;
 
-}
-h2{
+/* SEÇÃO DO MAPA */
+.sectionMapa{
+    padding: 3rem 0;
     text-align: center;
 }
-.imagemBeneficios{/*Imagem pode ter conteúdo do lado, listas e paragrafos não*/
-width: 50%;
+.descricaoMapa{
+    margin: 0 0 2rem;
 }
 
+/*SEÇÃO DE BENEFÍCIOS*/
+.sectionBeneficios{
+    width: 640px;
+    margin: 0 auto;
+    padding: 1rem;
+    
+}
+.imgBeneficios{
+    width: 60%;
+    /* box-shadow: inset 0 0 30px; (Sombra interna/para dentro do elemento */
+    box-shadow: 10px 10px 5px 5px rgb(179, 179, 179); 
+    /* Eixo x,
+     eixo y,
+     blur(de sólido para transparente),
+     intensidade da borda(a partir do elemento, o quão mais ela vai se espalhar),
+     cor
+     Obs: Podemos criar quantas sombras quisermos separadas por , */
+
+      
+}
+.imgBeneficios:hover{
+    opacity: 0.8;
+    transition: 400ms;
+}
+
+.listaBeneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.itensDeListabeneficios{
+    line-height: 1.5rem;/* Aqui também temos a opção de marcar o nth-child(4) para escolher o item de uma lista especificamente. Neste caso 4º. Para pegar todos os elementos pares podemos usar o nth-child(2n) */
+    
+}
+.itensDeListabeneficios:first-child{
+    font-weight: bold;
+}
+
+.divVideo{
+    width: 560px;
+    margin: 2rem auto;/* cima e baixo - auto dos lados (vai centralizar o vídeo */
+
+}
+
+
+footer{
+    background: url("bg.jpg");
+    text-align: center;
+    padding: 40px 0;
+}
+footer legend{
+    color: white;
+}

@@ -1,45 +1,87 @@
 <!DOCTYPE html>
-<html lang = "pt-br">
-    <head> 
-        <meta charset = "UTF8">
-        <title>Barbearia Alura</title>
-        <link rel="stylesheet" href="style.css"             
-    </head>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
 
-        <body>
-            <header>
-                <h1 class="tituloPrincipal">
-                    Barbearia
-                </h1>
+ 
+    <title>Barbearia Alura</title>
+</head>
+
+<body>       
+        
+    <header>
+        <div class="conteinerDoCabecalho">
+            <img class="logoCabecalho" src="logo.png" alt="Logomarca. Um homem barbudo de óculos escuros e cabelo penteado">
+            <nav class="navBarbearia">
+                <ul class="listaBarbearia">
+                    <li><a href="index.html" class="itensDeListaBarbearia">Home</a></li>
+                    <li><a href="produtos.html" class="itensDeListaBarbearia">Produto</a></li>
+                    <li><a href="contato.html" class="itensDeListaBarbearia">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>       
+        <img class="imgPrincipal" src="banner.jpg" alt="Imagem de barbearia estilo anos 70">
+        <section class="sectionFundoDegrade">
+    
+        <main>
+        
+            <section class="sectionSobreNos">
                 
-            </header>
+                <h2 id="tituloSobreNos">Sobre a Barbearia Alura</h2> 
+                <img src="utensilios.jpg" alt="Utensílios de Barbeiro" class="imgUtensilios">              
+                <p class="descricaoSobreNos">Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+                    
+                <div class="divMissao">            
+                    <h3 class="tituloMissao">Nossa Missão</h3>
+                    <p class="missao"><strong><em>"Proporcionar auto-estima e qualidade de vida aos clientes"</em></strong></p>
+                    <p class="descricaoMissao">Oferecemos profissionais experientes
+                        e antenados às mudanças no mundo da moda. O atendiment
+                        o possui padrão de excelência e agilidade, garantindo 
+                        qualidade e satisfação dos nossos clientes</p>    
+                </div>
+                      
+            </section> 
+            <section class="sectionMapa">
+            <h3 class="tituloMapa">Nosso Estabelecimento</h3>
+            <p class="descricaoMapa">Nosso estabelecimento está localizado no coração da cidade</p>
             
-            <img id="banner" src="banner.jpg" alt="Imagem de uma barbearia estilo anos 70">
-            <div class="principal">
-
-                <h2 class="textoCentralizado">Sobre a Barbearia</h2>
-
-                <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
-
-                <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
-
-                <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.4337638498973!2d-46.75635728441159!3d-23.516896365838278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff293e7bffff%3A0x7cf4627975a1230d!2sRevo%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1672843166943!5m2!1spt-BR!2sbr" width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+            </section> 
+            <section class="sectionBeneficios">              
+                <h2 class="tituloBeneficios">Benefícios</h2>
+                    <ul class="listaBeneficios">
+                        <li class="itensDeListabeneficios">Atendimento aos Clientes</li>
+                        <li class="itensDeListabeneficios">Espaço Diferenciado</li>
+                        <li class="itensDeListabeneficios">Localização</li>
+                        <li class="itensDeListabeneficios">Profissionais Qualificados</li>
+                        <li class="itensDeListabeneficios">Pontualidade</li>
+                        <li class="itensDeListabeneficios">Limpeza</li>
+                        <!-- IMPORTANTE: ABAIXO TIVEMOS QUE COLAR POR CAUSA DO 60% DE IMAGEM E 40% DA LISTA, CASO CONTRÁRIO NÃO CABE!! -->
+                    </ul><img class="imgBeneficios" src="beneficios.jpg" alt="Imagem de um barbeiro aparando barba de cliente com tesoura">     
+            </section>
+            <div class="divVideo">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="beneficios">
-
-                <h3 class="textoCentralizado">Benefícios</h3>
-            
-                    <ul>
-                        <li class="itensDeLista">Atendimento aos Clientes</li>
-                        <li class="itensDeLista">Espaço Diferenciado</li>
-                        <li class="itensDeLista">Localização Privilegiada</li>
-                        <li class="itensDeLista">Profissionais Altamente Qualificados</li>
-                    </ul>
-                    <img class="imagemBeneficios" src="beneficios.jpg" alt="Imagem de um barbeiro aparando a barba de um cliente com uma tesoura">
-            </div>
-
-
-    </body>
-
-
-</html>
+        </main>
+    
+        <footer>
+            <img src="logo-branco.png" alt="Logomarca da barbearia Alura. Um homem com cabelo penteado, barba, bigode e óculos escuros.">
+                <h3>
+                    <p>&copy; Copyright Barbearia Alura 2023</p>
+                </h3>
+            </img>
+        </footer>   
+    </section>
+    
+</body>
+    
+</html> 
